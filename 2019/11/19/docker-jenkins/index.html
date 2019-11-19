@@ -6,28 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://chenhanjie944969397.github.io">
-  <title>GitHub Pages + hexo 的简单版搭建个人博客 | Jie_Han</title>
+  <title>使用docket安装Jenkins | Jie_Han</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1，GitHub设置1,登录github,     创建一个你的用户名.github.io仓库,  注：按照git命令,步骤上传一个html页面; 2，设置github 为Pages，开放网址，​    1，点击项目的settings进入设置     2，下拉到选择  GitHub Pages 页面， 选中 Select source 的master branch  即可,复制绿色的url 访问你">
+  <meta name="description" content="1，docker 安装2，docker 使用与命令3，Jenkins安装4，Jenkins的使用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub Pages + hexo 的简单版搭建个人博客">
-<meta property="og:url" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;github-hexo&#x2F;index.html">
+<meta property="og:title" content="使用docket安装Jenkins">
+<meta property="og:url" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;19&#x2F;docker-jenkins&#x2F;index.html">
 <meta property="og:site_name" content="Jie_Han">
-<meta property="og:description" content="1，GitHub设置1,登录github,     创建一个你的用户名.github.io仓库,  注：按照git命令,步骤上传一个html页面; 2，设置github 为Pages，开放网址，​    1，点击项目的settings进入设置     2，下拉到选择  GitHub Pages 页面， 选中 Select source 的master branch  即可,复制绿色的url 访问你">
+<meta property="og:description" content="1，docker 安装2，docker 使用与命令3，Jenkins安装4，Jenkins的使用">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118134440912.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118134535719.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118134939696.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118135042530.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118140831603.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118142123624.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118143327766.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118144056110.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118143803716.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118143803716.png">
-<meta property="og:updated_time" content="2019-11-19T06:03:06.236Z">
+<meta property="og:updated_time" content="2019-11-19T10:07:30.681Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;img&#x2F;image-20191118134440912.png">
   
     <link rel="alternative" href="/atom.xml" title="Jie_Han" type="application/atom+xml">
   
@@ -163,66 +152,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-github-hexo" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-docker-jenkins" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      GitHub Pages + hexo 的简单版搭建个人博客
+      使用docket安装Jenkins
     </h1>
   
 
         
-        <a href="/2019/11/18/github-hexo/" class="archive-article-date">
-  	<time datetime="2019-11-18T07:16:26.660Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-18</time>
+        <a href="/2019/11/19/docker-jenkins/" class="archive-article-date">
+  	<time datetime="2019-11-19T08:32:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1，GitHub设置"><a href="#1，GitHub设置" class="headerlink" title="1，GitHub设置"></a>1，GitHub设置</h2><h3 id="1-登录github-创建一个你的用户名-github-io仓库"><a href="#1-登录github-创建一个你的用户名-github-io仓库" class="headerlink" title="1,登录github,     创建一个你的用户名.github.io仓库,"></a>1,登录<a href="https://github.com/" target="_blank" rel="noopener">github</a>,     创建一个<code>你的用户名.github.io</code>仓库,</h3><p><img src="../img/image-20191118134440912.png" alt=""></p>
-<p><img src="../img/image-20191118134535719.png" alt=""></p>
-<p><strong>注：按照git命令,步骤上传一个html页面;</strong></p>
-<h3 id="2，设置github-为Pages，开放网址，"><a href="#2，设置github-为Pages，开放网址，" class="headerlink" title="2，设置github 为Pages，开放网址，"></a>2，设置github 为Pages，开放网址，</h3><p>​    1，点击项目的<code>settings</code>进入设置</p>
-<p><img src="../img/image-20191118134939696.png" alt=""></p>
-<p>   2，下拉到选择  <code>GitHub Pages</code> 页面， 选中 <code>Select source</code> 的<code>master branch</code>  即可,复制绿色的url 访问你的个人网站地址；</p>
-<p><img src="../img/image-20191118135042530.png" alt=""></p>
-<h2 id="2，node-安装-与-Hexo"><a href="#2，node-安装-与-Hexo" class="headerlink" title="2，node 安装 与 Hexo"></a>2，node 安装 与 Hexo</h2><p>​        1, 安装 <code>node</code>    查看 <a href="http://nodejs.cn/" target="_blank" rel="noopener">node</a> 教程；</p>
-<p>​        2, 安装 <code>hexo</code>:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1,node 安装完毕，打开window 的CMD窗口 或者安装了Git 点击Git Bash Here，输入npm命令即可安装;</span><br><span class="line"><span class="comment">###命令###</span></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<h2 id="3，node初始化与启动"><a href="#3，node初始化与启动" class="headerlink" title="3，node初始化与启动:"></a>3，node初始化与启动:</h2><p>​        1, 安装完成后，根据自己喜好建立目录（如F:\Blog\Hexo），直接进入F:\Blog\Hexo文件夹下右键鼠标，点击Git Bash Here，进入Git命令框，执行以下操作。 </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init 文件夹名</span><br></pre></td></tr></table></figure>
-
-<p>​        2, 本地运行查看,  执行下面语句，执行完即可登录localhost:4000查看效果 </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean     清除 public 文件</span><br><span class="line">hexo generate  和install一样的效果，构建</span><br><span class="line">hexo server    启动，运行</span><br></pre></td></tr></table></figure>
-
-<p>​        3, 登录localhost:4000，即可看到本地的效果如下： </p>
-<p><img src="../img/image-20191118140831603.png" alt=""></p>
-<h2 id="4，更换主题"><a href="#4，更换主题" class="headerlink" title="4，更换主题"></a>4，更换主题</h2><p>1，先到  <a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo</a> 官网选择你喜欢的主题  输入git  clone url  到 themes目录；</p>
-<p>2，更改主目录(不是刚下载的themes文件)的 <code>_config.yml</code>  的  theme 内容</p>
-<p>​    <img src="../img/image-20191118142123624.png" alt=""></p>
-<p>3，执行上面语句，执行完即可登录localhost:4000查看效果： </p>
-<p>​    <img src="../img/image-20191118143327766.png" alt=""></p>
-<h2 id="5，部署到Git-Hub-上"><a href="#5，部署到Git-Hub-上" class="headerlink" title="5，部署到Git Hub 上"></a>5，部署到Git Hub 上</h2><p>1，复制github 工程的地址</p>
-<p><img src="../img/image-20191118144056110.png" alt=""></p>
-<p>2，修改 <code>_config.yml</code>  文件</p>
-<p><img src="../img/image-20191118143803716.png" alt=""></p>
-<p> <img src="../img/image-20191118143803716.png" alt=""> </p>
-<p>3，输入命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line"><span class="comment">#如果报错： ERROR Deployer not found: git，那么就是你的deployer没有安装成功，你需要执行如下命令再安装一次</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"><span class="comment">#再次输入命令：</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-<h2 id="6，其他问题"><a href="#6，其他问题" class="headerlink" title="6，其他问题"></a>6，其他问题</h2><p>1，hexo生成目录介绍：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">├── node_modules：是依赖包</span><br><span class="line">├── public  <span class="comment">#存放被解析markdown、html文件</span></span><br><span class="line">├── scaffolds <span class="comment">#当您新建文章时，根据 scaffold生成文件</span></span><br><span class="line">├── <span class="built_in">source</span>  <span class="comment">#资源文件夹</span></span><br><span class="line">|   └── _posts <span class="comment">#博客文章目录</span></span><br><span class="line">└── themes <span class="comment">#主题</span></span><br><span class="line">├── _config.yml   <span class="comment">#网站的配置信息。标题、网站名称等</span></span><br><span class="line">├── db.json：<span class="comment">#source解析所得到的</span></span><br><span class="line">├── package.json  <span class="comment"># 应用程序的配置信息</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
+        <h2 id="1，docker-安装"><a href="#1，docker-安装" class="headerlink" title="1，docker 安装"></a>1，docker 安装</h2><h2 id="2，docker-使用与命令"><a href="#2，docker-使用与命令" class="headerlink" title="2，docker 使用与命令"></a>2，docker 使用与命令</h2><h2 id="3，Jenkins安装"><a href="#3，Jenkins安装" class="headerlink" title="3，Jenkins安装"></a>3，Jenkins安装</h2><h2 id="4，Jenkins的使用"><a href="#4，Jenkins的使用" class="headerlink" title="4，Jenkins的使用"></a>4，Jenkins的使用</h2>
       
 
       
@@ -301,7 +251,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://chenhanjie944969397.github.io/2019/11/18/github-hexo/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://chenhanjie944969397.github.io/2019/11/19/docker-jenkins/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -313,6 +263,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/19/github-hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用 GitHub Pages + hexo 的简单版搭建个人博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -371,7 +331,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
