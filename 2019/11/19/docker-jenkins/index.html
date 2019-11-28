@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://chenhanjie944969397.github.io">
   <title>使用docket安装Jenkins | Jie_Han</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1，docker 安装2，docker 使用与命令3，Jenkins安装4，Jenkins的使用">
+  <meta name="description" content="docker官网链接; 1,docker是什么？ 12345678Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性">
 <meta name="keywords" content="docket,Jenkins">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用docket安装Jenkins">
 <meta property="og:url" content="https:&#x2F;&#x2F;chenhanjie944969397.github.io&#x2F;2019&#x2F;11&#x2F;19&#x2F;docker-jenkins&#x2F;index.html">
 <meta property="og:site_name" content="Jie_Han">
-<meta property="og:description" content="1，docker 安装2，docker 使用与命令3，Jenkins安装4，Jenkins的使用">
+<meta property="og:description" content="docker官网链接; 1,docker是什么？ 12345678Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-19T10:15:28.338Z">
+<meta property="og:updated_time" content="2019-11-26T02:29:47.492Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Jie_Han" type="application/atom+xml">
@@ -171,7 +171,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1，docker-安装"><a href="#1，docker-安装" class="headerlink" title="1，docker 安装"></a>1，docker 安装</h2><h2 id="2，docker-使用与命令"><a href="#2，docker-使用与命令" class="headerlink" title="2，docker 使用与命令"></a>2，docker 使用与命令</h2><h2 id="3，Jenkins安装"><a href="#3，Jenkins安装" class="headerlink" title="3，Jenkins安装"></a>3，Jenkins安装</h2><h2 id="4，Jenkins的使用"><a href="#4，Jenkins的使用" class="headerlink" title="4，Jenkins的使用"></a>4，Jenkins的使用</h2>
+        <p><a href="https://docs.docker.com" target="_blank" rel="noopener">docker官网链接;</a></p>
+<p>1,docker是什么？</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。</span><br><span class="line">Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</span><br><span class="line">容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。</span><br><span class="line">docker组成：</span><br><span class="line">    Docker Client 客户端</span><br><span class="line">    Docker Daemon 守护进程</span><br><span class="line">    Docker Image 镜像</span><br><span class="line">    Docker Container 容器</span><br></pre></td></tr></table></figure>
+
+<p>2,docker可以用来做什么？</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1,Web 应用的自动化打包和发布。</span><br><span class="line">2,自动化测试和持续集成、发布。</span><br><span class="line">3,在服务型环境中部署和调整数据库或其他的后台应用。</span><br><span class="line">4,从头编译或者扩展现有的 OpenShift 或 Cloud Foundry 平台来搭建自己的 PaaS 环境。</span><br></pre></td></tr></table></figure>
+
+<h2 id="1，docker-安装"><a href="#1，docker-安装" class="headerlink" title="1，docker 安装"></a>1，docker 安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">1,Docker CE的安装</span><br><span class="line">yum remove -y docker \</span><br><span class="line">              docker-client \</span><br><span class="line">              docker-client-latest \</span><br><span class="line">              docker-common \</span><br><span class="line">              docker-latest \</span><br><span class="line">              docker-latest-logrotate \</span><br><span class="line">              docker-logrotate \</span><br><span class="line">              docker-engine</span><br><span class="line">              </span><br><span class="line">2,安装所需要的软件</span><br><span class="line">yum install -y yum-utils device-mapper-persistent-data lvm2</span><br><span class="line"></span><br><span class="line">3,设置Docker的存储库</span><br><span class="line">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line"></span><br><span class="line">4,安装最新版Docker-ce</span><br><span class="line">yum install -y docker-ce  </span><br><span class="line"></span><br><span class="line">5,安装</span><br><span class="line">访问http://mirror.centos.org/centos/7/extras/x86_64/Packages/</span><br><span class="line">查看你要安装的版本</span><br><span class="line">wget url 等待安装........</span><br><span class="line">rpm -ivh container-selinux-2.95-2.el7_6.noarch.rpm</span><br><span class="line">yum install -y docker-ce</span><br><span class="line"></span><br><span class="line">6,启动docker</span><br><span class="line">systemctl daemon-reload &amp;&amp; systemctl start docker</span><br><span class="line"></span><br><span class="line">7,查看docker的版本 or 查看更详细的的信息</span><br><span class="line">docker version   or   docker info</span><br><span class="line"></span><br><span class="line">8,docker运行hello-world</span><br><span class="line">docker run hello-world</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2，docker-使用与命令"><a href="#2，docker-使用与命令" class="headerlink" title="2，docker 使用与命令"></a>2，docker 使用与命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">启动Docker：sudo systemctl start docker</span><br><span class="line"></span><br><span class="line">查看版本： docker version</span><br><span class="line"></span><br><span class="line">测试是否启动：sudo docker run hello-world</span><br><span class="line"></span><br><span class="line">docker ps 查看当前正在运行的容器</span><br><span class="line"></span><br><span class="line">docker ps -a 查看所有容器的状态</span><br><span class="line"></span><br><span class="line">docker start/stop id/name 启动/停止某个容器</span><br><span class="line"></span><br><span class="line">docker attach id 进入某个容器(使用<span class="built_in">exit</span>退出后容器也跟着停止运行)</span><br><span class="line"></span><br><span class="line">docker <span class="built_in">exec</span> -ti id 启动一个伪终端以交互式的方式进入某个容器（使用<span class="built_in">exit</span>退出后容器不停止运行）</span><br><span class="line"></span><br><span class="line">docker images 查看本地镜像</span><br><span class="line">docker rm id/name 删除某个容器</span><br><span class="line">docker rmi id/name 删除某个镜像</span><br><span class="line"></span><br><span class="line">docker pull 镜像名  下载镜像</span><br><span class="line"></span><br><span class="line">docker run --name <span class="built_in">test</span> -ti ubuntu /bin/bash  复制ubuntu容器并且重命名为<span class="built_in">test</span>且运行，然后以伪终端交互式方式进入容器，运行bash</span><br><span class="line">docker build -t soar/centos:7.1 .  通过当前目录下的Dockerfile创建一个名为soar/centos:7.1的镜像</span><br><span class="line"></span><br><span class="line">docker run -d -p 2222:22 --name <span class="built_in">test</span> soar/centos:7.1  以镜像soar/centos:7.1创建名为<span class="built_in">test</span>的容器，并以后台模式运行，并做端口映射到宿主机2222端口，P参数重启</span><br><span class="line"></span><br><span class="line">运行交互式的容器：docker run -i -t ubuntu:15.10 /bin/bash</span><br><span class="line">-t:在新容器内指定一个伪终端或终端。</span><br><span class="line">-i:允许你对容器内的标准输入 (STDIN) 进行交互。</span><br><span class="line"></span><br><span class="line">启动容器（后台模式）：docker run -d ubuntu:15.10 /bin/sh -c <span class="string">"while true; do echo hello world; sleep 1; done"</span></span><br><span class="line">查看容器输出： docker logs ID或name</span><br><span class="line">停止容器运行： docker stop ID或name</span><br><span class="line"></span><br><span class="line">运行一个web应用：</span><br><span class="line">docker pull training/webapp  <span class="comment"># 载入镜像</span></span><br><span class="line">docker run -d -P training/webapp python app.py</span><br><span class="line">-d:让容器在后台运行。</span><br><span class="line">-P:将容器内部使用的网络（ip）+端口映射到我们使用的主机上。</span><br><span class="line"></span><br><span class="line">重新启动服务：</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3，docker-Jenkins安装"><a href="#3，docker-Jenkins安装" class="headerlink" title="3，docker + Jenkins安装"></a>3，docker + Jenkins安装</h2><h2 id="4，docker-Jenkins的使用"><a href="#4，docker-Jenkins的使用" class="headerlink" title="4，docker +Jenkins的使用"></a>4，docker +Jenkins的使用</h2>
       
 
       
@@ -275,11 +290,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2019/11/19/github-hexo/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">使用 GitHub Pages + hexo 的简单版搭建个人博客</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2019/11/19/github-hexo/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          使用 GitHub Pages + hexo 的简单版搭建个人博客
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -399,11 +418,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">docket,Jenkins</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">docket,Jenkins</a>
               </li>
             
             <div class="clearfix"></div>
